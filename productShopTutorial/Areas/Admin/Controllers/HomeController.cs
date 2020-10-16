@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using productShopTutorial.Models;
 
-namespace productShopTutorial.Controllers
+namespace productShopTutorial.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class HomeController : Controller
     {
 
@@ -16,12 +14,5 @@ namespace productShopTutorial.Controllers
         {
             return View();
         }
-
-        [Route("[action]")]
-        public IActionResult About()
-        {
-            return View();
-        }
-
     }
 }
